@@ -17,27 +17,30 @@
         android:text="@string/single_player"
         android:textSize="20sp"
         android:onClick="btnsClick"
+        android:background="@drawable/buttonstyle"
         />
+
     <Button
         android:id="@+id/btn_double_player"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/double_player"
-        android:textSize="20sp"
-        android:onClick="btnsClick"
         android:layout_marginTop="10dp"
-        />
+        android:background="@drawable/buttonstyle"
+        android:onClick="btnsClick"
+        android:text="@string/double_player"
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/btn_help"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="@string/help"
-        android:textSize="20sp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
+        android:background="@drawable/buttonstyle"
         android:onClick="btnsClick"
-        />
+        android:text="@string/help"
+        android:textSize="20sp" />
     <Button
         android:id="@+id/btn_contact_us"
         android:layout_width="250dp"
@@ -47,6 +50,7 @@
         android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:onClick="btnsClick"
+        android:background="@drawable/buttonstyle"
         />
     <Button
         android:id="@+id/btn_exit"
@@ -57,5 +61,6 @@
         android:text="@string/exit"
         android:textSize="20sp"
         android:onClick="btnsClick"
+        android:background="@drawable/buttonstyle"
         />
 </LinearLayout>
