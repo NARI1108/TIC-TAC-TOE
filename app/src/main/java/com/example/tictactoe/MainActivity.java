@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         switch(id){
             case R.id.btn_single_player:startActivity(new Intent(MainActivity.this,single_Player.class));
                 break;
+            case R.id.btn_exit:finish();
         }
     }
 }
