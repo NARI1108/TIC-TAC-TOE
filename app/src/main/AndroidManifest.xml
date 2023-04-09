@@ -12,6 +12,15 @@
         android:theme="@style/Theme.TICTACTOE"
         tools:targetApi="31">
         <activity
+            android:name=".contact_us"
+            android:exported="false" />
+        <activity
+            android:name=".guide_Game"
+            android:exported="false" />
+        <activity
+            android:name=".double_Player"
+            android:exported="false" />
+        <activity
             android:name=".single_Player"
             android:exported="false" />
         <activity
@@ -27,7 +36,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/fullScreen"></activity>
+            android:theme="@style/fullScreen" />
     </application>
 
 </manifest>
