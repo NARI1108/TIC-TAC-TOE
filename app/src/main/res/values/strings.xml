@@ -6,4 +6,11 @@
     <string name="contact_us">contact Us</string>
     <string name="exit">Exit</string>
     <string name="guide_game">guide game</string>
+    <string name="guide_game.txt">
+        You can play Tic Tac Toe with your friends.That our programming team
+        created in this artificial intelligence game has done that you can with
+        it on two levels, easy and hard play The Tic Tac Toe is run with two blue
+        and red dice Such that if three beads of the same color are next to each
+        other The game will be in favor of the winning player.
+    </string>
 </resources>
