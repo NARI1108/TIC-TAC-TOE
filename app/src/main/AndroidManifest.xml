@@ -15,6 +15,7 @@
             android:name=".contact_us"
             android:exported="false" />
         <activity
+            android:theme="@style/fullScreen"
             android:name=".guide_Game"
             android:exported="false" />
         <activity
