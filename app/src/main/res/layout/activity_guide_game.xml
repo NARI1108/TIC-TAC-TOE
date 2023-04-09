@@ -8,6 +8,7 @@
     android:background="@drawable/img_1">
 
     <TextView
+        android:layout_marginLeft="7dp"
         android:id="@+id/textView"
         android:layout_width="401dp"
         android:layout_height="328dp"

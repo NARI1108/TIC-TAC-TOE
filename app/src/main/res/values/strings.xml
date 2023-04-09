@@ -13,4 +13,8 @@
         and red dice Such that if three beads of the same color are next to each
         other The game will be in favor of the winning player.
     </string>
+    <string name="contact_us.txt">
+        Creating the content of the game guide, such as enlarging the image and
+        writing the guide text, writing the game version and putting the game icon.
+    </string>
 </resources>
