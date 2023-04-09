@@ -32,14 +32,14 @@
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/btn_help"
+        android:id="@+id/btn_guide_game"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonstyle"
         android:onClick="btnsClick"
-        android:text="@string/help"
+        android:text="@string/guide_game"
         android:textSize="20sp" />
     <Button
         android:id="@+id/btn_contact_us"
