@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".single_Player"
-    android:background="@drawable/img_1">
+    tools:context=".single_Player">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
