@@ -179,4 +179,34 @@
             </LinearLayout>
         </LinearLayout>
         </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/result_layout"
+        android:background="#4B000000">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/txt_result"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_again"
+            android:paddingLeft="31dp"
+            android:paddingRight="31dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_result"
+            android:id="@+id/btn_play_again"
+            />
+    </RelativeLayout>
 </RelativeLayout>
