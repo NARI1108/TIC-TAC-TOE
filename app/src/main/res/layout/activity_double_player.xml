@@ -60,4 +60,123 @@
                 android:padding="6dp"
                 android:enabled="false"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/pg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/board"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_marginTop="95dp"
+            android:layout_marginBottom="95dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:weightSum="3">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="imgsClick"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:tag="0"
+                    android:id="@+id/img_0"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="imgsClick"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:tag="1"
+                    android:id="@+id/img_1"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="imgsClick"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:tag="2"
+                    android:id="@+id/img_2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="imgsClick"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:tag="3"
+                    android:id="@+id/img_3"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="imgsClick"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:tag="4"
+                    android:id="@+id/img_4"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="imgsClick"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:tag="5"
+                    android:id="@+id/img_5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="imgsClick"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:tag="6"
+                    android:id="@+id/img_6"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="imgsClick"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:tag="7"
+                    android:id="@+id/img_7"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="imgsClick"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:tag="8"
+                    android:id="@+id/img_8"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
 </RelativeLayout>
