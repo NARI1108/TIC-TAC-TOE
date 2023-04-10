@@ -17,4 +17,9 @@
         Creating the content of the game guide, such as enlarging the image and
         writing the guide text, writing the game version and putting the game icon.
     </string>
+    <string name="play_again">Play again</string>
+    <string name="player2">Player2</string>
+    <string name="_0">0</string>
+    <string name="__0">0</string>
+    <string name="player1">Player1</string>
 </resources>
