@@ -22,4 +22,8 @@
     <string name="_0">0</string>
     <string name="__0">0</string>
     <string name="player1">Player1</string>
+    <string name="enter_your_name_please">Enter your name Please:</string>
+    <string name="_player2">Player2</string>
+    <string name="_player1">Player1</string>
+    <string name="play">Play</string>
 </resources>
