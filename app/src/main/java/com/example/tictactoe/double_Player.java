@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,5 +31,15 @@ public class double_Player extends AppCompatActivity {
         img_6 = findViewById(R.id.img_6);
         img_7 = findViewById(R.id.img_7);
         img_8 = findViewById(R.id.img_8);
+    playerNamesDialog();
+    }
+    private void playerNamesDialog(){
+      Dialog  playerNameDialog = new Dialog(this);
+      playerNameDialog.setContentView(R.layout.player_name_dialog);
+
+        EditText edt_player1 =playerNameDialog.findViewById(R.id.edt_player1);
+        EditText edt_player2 =playerNameDialog.findViewById(R.id.edt_player2);
+        Button btn_play = playerNameDialog.findViewById(R.id.btn_play);
+
     }
 }
