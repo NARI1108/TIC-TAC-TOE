@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -12,7 +13,7 @@ import android.widget.TextView;
 public class double_Player extends AppCompatActivity {
     TextView txt_player1, txt_player2, txt_score1, txt_score2;
     ImageView img_0, img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8;
-
+    String player_name1, player_name2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +38,29 @@ public class double_Player extends AppCompatActivity {
       Dialog  playerNameDialog = new Dialog(this);
       playerNameDialog.setContentView(R.layout.player_name_dialog);
 
+        playerNameDialog.setCancelable(false);
+
         EditText edt_player1 =playerNameDialog.findViewById(R.id.edt_player1);
         EditText edt_player2 =playerNameDialog.findViewById(R.id.edt_player2);
         Button btn_play = playerNameDialog.findViewById(R.id.btn_play);
 
+        btn_play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                player_name1 = edt_player1.getText().toString().trim();
+                player_name2 = edt_player2.getText().toString().trim();
+
+                if(player_name1.equals("")) player_name1="Player1";
+                if(player_name2.equals("")) player_name2="Player2";
+
+                txt_player1.setText(player_name1);
+                txt_player2.setText(player_name2);
+
+                playerNameDialog.dismiss();
+            }
+        });
+        playerNameDialog.show();
     }
+
 }
