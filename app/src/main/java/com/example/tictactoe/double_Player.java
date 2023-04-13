@@ -11,6 +11,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class double_Player extends AppCompatActivity {
+    final static int NULL=0;
+    final static int PLAYER_1=1;
+    final static int PLAYER_2=2;
+    int turn = 1;
+    int [] status = {NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,};
     TextView txt_player1, txt_player2, txt_score1, txt_score2;
     ImageView img_0, img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8;
     String player_name1, player_name2;
@@ -61,6 +66,24 @@ public class double_Player extends AppCompatActivity {
             }
         });
         playerNameDialog.show();
+    }
+    public void imagesClick(View view){
+
+        int tag = Integer.parseInt((String)view.getTag());
+
+        if(status[tag] != 0) return;
+
+        ImageView imageView =(ImageView)view;
+        if(turn == PLAYER_1){
+            imageView.setImageResource(R.drawable.multiply);
+            turn = PLAYER_2;
+            status[tag]=PLAYER_1;
+        }else {
+            imageView.setImageResource(R.drawable.circle);
+
+            turn = PLAYER_1;
+            status[tag] = PLAYER_2;
+        }
     }
 
 }
