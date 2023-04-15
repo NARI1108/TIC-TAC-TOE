@@ -136,4 +136,20 @@ public class double_Player extends AppCompatActivity {
         }
         return true;
     }
+    public void resetGame(View view){
+        if(winner == NO_WINNER) turn = PLAYER_1; else turn = winner;
+        game_over = false;
+        winner = number;
+        Arrays.fill(status,NULL);
+        img_0.setImageResource(0);
+        img_1.setImageResource(0);
+        img_2.setImageResource(0);
+        img_3.setImageResource(0);
+        img_4.setImageResource(0);
+        img_5.setImageResource(0);
+        img_6.setImageResource(0);
+        img_7.setImageResource(0);
+        img_8.setImageResource(0);
+        result_layout.setVisibility(View.GONE);
+    }
 }
