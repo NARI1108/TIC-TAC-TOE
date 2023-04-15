@@ -28,7 +28,7 @@ public class double_Player extends AppCompatActivity {
     String player_name1, player_name2;
     Button btn_play_again;
     RelativeLayout result_layout;
-
+    Boolean game_over = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,6 +100,7 @@ public class double_Player extends AppCompatActivity {
                 turn = PLAYER_1;
                 status[tag] = PLAYER_2;
             }
+            getResult();
     }
     private int checkWinner() {
         for (int[] win_pos : winner_position) {
@@ -109,4 +110,25 @@ public class double_Player extends AppCompatActivity {
         }
         return NO_WINNER;
     }
+
+    private void getResult() {
+        winner = checkWinner();
+        if(winner != NO_WINNER ){
+            game_over = true;
+            String res_str = " ";
+            switch (winner) {
+                case 1:
+                    res_str = player_name1 + " won.";
+                    break;
+                case 2:
+                    res_str = player_name2 + " won.";
+                    break;
+                case 3:
+                    res_str = "you are equal.";
+                    break;
+            }
+            txt_result.setText(res_str);
+            result_layout.setVisibility(View.VISIBLE);
+        }}
+
 }
