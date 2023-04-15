@@ -58,7 +58,6 @@
             android:textStyle="bold"
             android:gravity="center"
             android:background="@drawable/buttonstyle"
-            android:onClick="restGame"
             android:textSize="25sp"
             />
     </RelativeLayout>
