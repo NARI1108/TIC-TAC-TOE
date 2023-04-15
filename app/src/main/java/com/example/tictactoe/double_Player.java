@@ -87,7 +87,7 @@ public class double_Player extends AppCompatActivity {
 
         int tag = Integer.parseInt((String) view.getTag());
 
-            if (status[tag] != NULL ) return;
+            if (status[tag] != NULL || game_over) return;
 
             ImageView imageView = (ImageView) view;
             if (turn == PLAYER_1) {
@@ -113,7 +113,7 @@ public class double_Player extends AppCompatActivity {
 
     private void getResult() {
         winner = checkWinner();
-        if(winner != NO_WINNER ){
+        if(winner != NO_WINNER || isFullAllCells()){
             game_over = true;
             String res_str = " ";
             switch (winner) {
@@ -130,5 +130,10 @@ public class double_Player extends AppCompatActivity {
             txt_result.setText(res_str);
             result_layout.setVisibility(View.VISIBLE);
         }}
-
+    private boolean isFullAllCells() {
+        for (int j : status) {
+            if (j == NULL) return false;
+        }
+        return true;
+    }
 }
