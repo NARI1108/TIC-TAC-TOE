@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -23,6 +24,7 @@ public class double_Player extends AppCompatActivity {
     int[] status = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
     int winner = number;
     int[][] winner_position = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}};
+    ArrayList<ImageView> imageView_List = new ArrayList<>();
     TextView txt_player1, txt_player2, txt_score1, txt_score2, txt_result;
     ImageView img_0, img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8;
     String player_name1, player_name2;
@@ -48,6 +50,9 @@ public class double_Player extends AppCompatActivity {
         img_7 = findViewById(R.id.img_7);
         img_8 = findViewById(R.id.img_8);
 
+        imageView_List.add(img_0); imageView_List.add(img_1); imageView_List.add(img_2);
+        imageView_List.add(img_3); imageView_List.add(img_4); imageView_List.add(img_5);
+        imageView_List.add(img_6); imageView_List.add(img_7); imageView_List.add(img_8);
         txt_result = findViewById(R.id.txt_result);
 
         btn_play_again = findViewById(R.id.btn_play_again);
@@ -138,18 +143,7 @@ public class double_Player extends AppCompatActivity {
     }
     public void resetGame(View view){
         if(winner == NO_WINNER) turn = PLAYER_1; else turn = winner;
-        game_over = false;
-        winner = number;
-        Arrays.fill(status,NULL);
-        img_0.setImageResource(0);
-        img_1.setImageResource(0);
-        img_2.setImageResource(0);
-        img_3.setImageResource(0);
-        img_4.setImageResource(0);
-        img_5.setImageResource(0);
-        img_6.setImageResource(0);
-        img_7.setImageResource(0);
-        img_8.setImageResource(0);
+         for(int i=0 ; i<imageView_List.size() ; i++ ){ imageView_List.get(i).setImageResource(0);}
         result_layout.setVisibility(View.GONE);
     }
 }
