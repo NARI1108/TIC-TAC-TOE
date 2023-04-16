@@ -120,6 +120,7 @@ public class double_Player extends AppCompatActivity {
         winner = checkWinner();
         if(winner != NO_WINNER || isFullAllCells()){
             game_over = true;
+            for(int i=0 ; i<imageView_List.size() ; i++ ){ imageView_List.get(i).setEnabled(false);}
             String res_str = " ";
             switch (winner) {
                 case 1:
@@ -143,7 +144,8 @@ public class double_Player extends AppCompatActivity {
     }
     public void resetGame(View view){
         if(winner == NO_WINNER) turn = PLAYER_1; else turn = winner;
-         for(int i=0 ; i<imageView_List.size() ; i++ ){ imageView_List.get(i).setImageResource(0);}
+         for(int i=0 ; i<imageView_List.size() ; i++ ){ imageView_List.get(i).setImageResource(0);
+            imageView_List.get(i).setEnabled(true);}
         result_layout.setVisibility(View.GONE);
     }
 }
