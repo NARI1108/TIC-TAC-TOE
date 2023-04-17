@@ -20,7 +20,7 @@ public class double_Player extends AppCompatActivity {
     final static int PLAYER_1 = 1;
     final static int PLAYER_2 = 2;
     final static int NO_WINNER = 3;
-    int turn = PLAYER_1 , number = -1;
+    int turn = PLAYER_1 , number = -1, score_1=0 ,score_2=0 ;
     int[] status = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
     int winner = number;
     int[][] winner_position = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}};
@@ -120,18 +120,23 @@ public class double_Player extends AppCompatActivity {
         winner = checkWinner();
         if(winner != NO_WINNER || isFullAllCells()){
             game_over = true;
+
             String res_str = " ";
             switch (winner) {
                 case 1:
-                    res_str = player_name1 + " won.";
+                    res_str = player_name1 + " won.";score_1++;
                     break;
                 case 2:
-                    res_str = player_name2 + " won.";
+                    res_str = player_name2 + " won.";score_2++;
                     break;
                 case 3:
                     res_str = "you are equal.";
                     break;
             }
+
+            txt_score1.setText(String.valueOf(score_1));
+            txt_score2.setText(String.valueOf(score_2));
+
             txt_result.setText(res_str);
             result_layout.setVisibility(View.VISIBLE);
         }}
@@ -143,7 +148,12 @@ public class double_Player extends AppCompatActivity {
     }
     public void resetGame(View view){
         if(winner == NO_WINNER) turn = PLAYER_1; else turn = winner;
-         for(int i=0 ; i<imageView_List.size() ; i++ ){ imageView_List.get(i).setImageResource(0);}
+         game_over=false;
+         winner=number;
+         Arrays.fill(status,NULL);
+        for(int i=0 ; i<imageView_List.size() ; i++ )
+         imageView_List.get(i).setImageResource(0);
+
         result_layout.setVisibility(View.GONE);
     }
 }
