@@ -17,7 +17,7 @@ import java.util.Arrays;
 
 
 public class double_Player extends AppCompatActivity {
-    MediaPlayer click_snd;
+    MediaPlayer click_snd, winner_snd;
     final static int NULL = 0;
     final static int PLAYER_1 = 1;
     final static int PLAYER_2 = 2;
@@ -116,11 +116,13 @@ public class double_Player extends AppCompatActivity {
     @Override
     protected void onResume(){
        if(click_snd==null) click_snd = MediaPlayer.create(this,R.raw.click);
+       if(winner_snd==null) winner_snd = MediaPlayer.create(this,R.raw.win_sound);
      super.onResume();
     }
     @Override
     protected void onPause(){
       if(click_snd!=null) click_snd.release();
+      if(winner_snd!=null) winner_snd.release();
        super.onPause();
     }
     private int checkWinner() {
@@ -158,6 +160,8 @@ public class double_Player extends AppCompatActivity {
             result_layout.setVisibility(View.VISIBLE);
 
             setColorCells();
+
+            winner_snd.start();
         }}
     private boolean isFullAllCells() {
         for (int j : status) {
