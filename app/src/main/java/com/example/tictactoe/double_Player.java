@@ -24,6 +24,7 @@ public class double_Player extends AppCompatActivity {
     int[] status = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
     int winner = number;
     int[][] winner_position = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}};
+    int [] final_winner_position;
     ArrayList<ImageView> imageView_List = new ArrayList<>();
     TextView txt_player1, txt_player2, txt_score1, txt_score2, txt_result;
     ImageView img_0, img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8;
@@ -110,6 +111,7 @@ public class double_Player extends AppCompatActivity {
     private int checkWinner() {
         for (int[] win_pos : winner_position) {
             if (status[win_pos[0]] == status[win_pos[1]] && status[win_pos[1]] == status[win_pos[2]] && status[win_pos[0]] != NULL) {
+                final_winner_position = win_pos;
                 return status[win_pos[0]];
             }
         }
@@ -139,6 +141,8 @@ public class double_Player extends AppCompatActivity {
 
             txt_result.setText(res_str);
             result_layout.setVisibility(View.VISIBLE);
+
+            setColorCells();
         }}
     private boolean isFullAllCells() {
         for (int j : status) {
@@ -155,5 +159,22 @@ public class double_Player extends AppCompatActivity {
          imageView_List.get(i).setImageResource(0);
 
         result_layout.setVisibility(View.GONE);
+    }
+    private void setColorCells(){
+     for(int i=0 ; i<imageView_List.size() ; i++){
+         if(status[i] == 1){
+              imageView_List.get(i).setImageResource(R.drawable.multiply_grey);
+         }else if(status[i] == 2){
+             imageView_List.get(i).setImageResource(R.drawable.circle_grey);
+         }if(winner == PLAYER_1) {
+             imageView_List.get(final_winner_position[0]).setImageResource(R.drawable.multiply);
+             imageView_List.get(final_winner_position[1]).setImageResource(R.drawable.multiply);
+             imageView_List.get(final_winner_position[2]).setImageResource(R.drawable.multiply);
+         }else if(winner == PLAYER_2){
+             imageView_List.get(final_winner_position[0]).setImageResource(R.drawable.circle);
+             imageView_List.get(final_winner_position[1]).setImageResource(R.drawable.circle);
+             imageView_List.get(final_winner_position[2]).setImageResource(R.drawable.circle);
+         }
+         }
     }
 }
