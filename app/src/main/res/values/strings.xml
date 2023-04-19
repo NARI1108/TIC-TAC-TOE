@@ -26,4 +26,7 @@
     <string name="_player2">Player2</string>
     <string name="_player1">Player1</string>
     <string name="play">Play</string>
+    <string name="select_your_level_game">Select your level game!</string>
+    <string name="easy">Easy</string>
+    <string name="hard">Hard</string>
 </resources>
