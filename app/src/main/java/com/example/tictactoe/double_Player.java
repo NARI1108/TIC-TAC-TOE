@@ -3,6 +3,7 @@ package com.example.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +17,7 @@ import java.util.Arrays;
 
 
 public class double_Player extends AppCompatActivity {
+    MediaPlayer click_snd, winner_snd;
     final static int NULL = 0;
     final static int PLAYER_1 = 1;
     final static int PLAYER_2 = 2;
@@ -59,6 +61,8 @@ public class double_Player extends AppCompatActivity {
         btn_play_again = findViewById(R.id.btn_play_again);
 
         result_layout = findViewById(R.id.result_layout);
+
+
         playerNamesDialog();
     }
     private void playerNamesDialog() {
@@ -107,6 +111,19 @@ public class double_Player extends AppCompatActivity {
                 status[tag] = PLAYER_2;
             }
             getResult();
+            click_snd.start();
+    }
+    @Override
+    protected void onResume(){
+       if(click_snd==null) click_snd = MediaPlayer.create(this,R.raw.click);
+       if(winner_snd==null) winner_snd = MediaPlayer.create(this,R.raw.win_sound);
+     super.onResume();
+    }
+    @Override
+    protected void onPause(){
+      if(click_snd!=null) click_snd.release();
+      if(winner_snd!=null) winner_snd.release();
+       super.onPause();
     }
     private int checkWinner() {
         for (int[] win_pos : winner_position) {
@@ -143,6 +160,8 @@ public class double_Player extends AppCompatActivity {
             result_layout.setVisibility(View.VISIBLE);
 
             setColorCells();
+
+            winner_snd.start();
         }}
     private boolean isFullAllCells() {
         for (int j : status) {
