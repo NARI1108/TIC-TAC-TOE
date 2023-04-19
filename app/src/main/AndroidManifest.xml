@@ -12,13 +12,19 @@
         android:theme="@style/Theme.TICTACTOE"
         tools:targetApi="31">
         <activity
-            android:theme="@style/fullScreen"
-            android:name=".contact_us"
+            android:name=".Hard_Single_Player"
             android:exported="false" />
         <activity
-            android:theme="@style/fullScreen"
-            android:name=".guide_Game"
+            android:name=".Easy_Single_Player"
             android:exported="false" />
+        <activity
+            android:name=".contact_us"
+            android:exported="false"
+            android:theme="@style/fullScreen" />
+        <activity
+            android:name=".guide_Game"
+            android:exported="false"
+            android:theme="@style/fullScreen" />
         <activity
             android:name=".double_Player"
             android:exported="false" />
