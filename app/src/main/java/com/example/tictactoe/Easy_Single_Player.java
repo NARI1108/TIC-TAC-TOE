@@ -9,6 +9,6 @@ public class Easy_Single_Player extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_easy_single_player);
+        setContentView(R.layout.activity_double_player);
     }
 }
