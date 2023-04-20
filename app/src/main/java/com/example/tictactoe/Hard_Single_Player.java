@@ -1,10 +1,9 @@
 package com.example.tictactoe;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Hard_Single_Player extends AppCompatActivity {
+public class Hard_Single_Player extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
