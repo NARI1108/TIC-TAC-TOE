@@ -1,7 +1,11 @@
 package com.example.tictactoe;
 
 
+import android.app.Dialog;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class Easy_Single_Player extends BaseActivity {
 
@@ -34,5 +38,36 @@ public class Easy_Single_Player extends BaseActivity {
 
         result_layout = findViewById(R.id.result_layout);
 
+        playerNamesDialog();
+    }
+    private void playerNamesDialog() {
+        Dialog playerNameDialog = new Dialog(this);
+        playerNameDialog.setContentView(R.layout.player_name_dialog);
+
+        playerNameDialog.setCancelable(false);
+
+        EditText edt_player1 = playerNameDialog.findViewById(R.id.edt_player1);
+        EditText edt_player2 = playerNameDialog.findViewById(R.id.edt_player2);
+        Button btn_play = playerNameDialog.findViewById(R.id.btn_play);
+
+        edt_player1.setVisibility(View.GONE);
+        edt_player2.setHint("Your Name");
+        btn_play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                player_name1 = "Robot";
+                player_name2 = edt_player2.getText().toString().trim();
+
+
+                if (player_name2.equals("")) player_name2 = "You";
+
+                txt_player1.setText(player_name1);
+                txt_player2.setText(player_name2);
+
+                playerNameDialog.dismiss();
+            }
+        });
+        playerNameDialog.show();
     }
 }
