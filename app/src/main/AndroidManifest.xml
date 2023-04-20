@@ -12,6 +12,9 @@
         android:theme="@style/Theme.TICTACTOE"
         tools:targetApi="31">
         <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".Hard_Single_Player"
             android:exported="false" />
         <activity

@@ -1,6 +1,5 @@
 package com.example.tictactoe;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.media.MediaPlayer;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-public class double_Player extends AppCompatActivity {
+public class double_Player extends BaseActivity {
     MediaPlayer click_snd, winner_snd;
     final static int NULL = 0;
     final static int PLAYER_1 = 1;
