@@ -101,6 +101,7 @@ public class Easy_Single_Player extends BaseActivity {
             status[tag] = PLAYER_2;
 
         click_snd.start();
+        robotAction_1();
     }
     public void robotClick(int tag){
         if(status[tag] != NULL || game_over) return;
@@ -111,5 +112,8 @@ public class Easy_Single_Player extends BaseActivity {
 
         click_snd.start();
     }
-
+    private void robotAction_1(){
+        int random = getRandomNumber(9);
+        if(status[random] == NULL) robotClick(random); else robotAction_1();
+    }
 }
