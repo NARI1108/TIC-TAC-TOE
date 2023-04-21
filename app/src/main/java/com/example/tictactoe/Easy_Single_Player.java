@@ -68,9 +68,11 @@ public class Easy_Single_Player extends BaseActivity {
                 txt_player2.setText(player_name2);
 
                 playerNameDialog.dismiss();
+                robotClick(getRandomNumber(9));
             }
         });
         playerNameDialog.show();
+
     }
     @Override
     protected void onResume(){
@@ -100,4 +102,14 @@ public class Easy_Single_Player extends BaseActivity {
 
         click_snd.start();
     }
+    public void robotClick(int tag){
+        if(status[tag] != NULL || game_over) return;
+        imageView_List.get(tag).setImageResource(R.drawable.multiply);
+
+        turn = PLAYER_2;
+        status[tag] = PLAYER_1;
+
+        click_snd.start();
+    }
+
 }
