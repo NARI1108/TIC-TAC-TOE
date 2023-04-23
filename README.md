@@ -21,4 +21,5 @@ You can play this game online on this site.</p>
     This version can be run on Android devices.
     </li>
   </ul>
+  <p>Run the app and enjoy it</p>
  App developer <em><strong>Naser Ahmadi</strong></em>
