@@ -4,6 +4,7 @@ Our game has two parts. The first part is playing with the robot.<strong>(You ca
 The second part of the game for two players.<strong>(You can play this game with a friend.)</strong><br>
 You can play this game online on this site.</p>
 [Tic Tac Toe](https://tic-tac-toe.com/).
+<p><strong>You can see a profile of our game below.</strong></p>
 
 
 
