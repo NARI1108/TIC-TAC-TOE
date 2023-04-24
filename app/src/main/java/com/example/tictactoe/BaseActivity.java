@@ -52,9 +52,23 @@ public class BaseActivity extends AppCompatActivity {
         getResult();
         click_snd.start();
     }
-    public void robotAction_1(){
-        int random = getRandomNumber(9);
-        if(!game_over){if(status[random] == NULL) robotClick(random); else robotAction_1();}
+    public void robotAction_1() {
+        int random = getRandomNumber(status.length);
+        if (!game_over) {
+            if (status[random] == NULL) robotClick(random);
+            else robotAction_1();
+        }
+    }
+    public void robotAction_2(){
+
+        if (!game_over){
+            for (int [] action_2 : robot_action_2_position)
+            {
+                if (status[action_2[0]]==PLAYER_1 && status[action_2[1]]==NULL){
+                    robotClick(action_2[1]);return;}
+            }
+            robotAction_1();
+        }
     }
     public int checkWinner() {
         for (int[] win_pos : winner_position) {
