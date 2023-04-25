@@ -122,6 +122,7 @@ public class BaseActivity extends AppCompatActivity {
             imageView_List.get(i).setImageResource(0);
 
         result_layout.setVisibility(View.GONE);
+        if(turn==PLAYER_1)robotClick(getRandomNumber(status.length));
     }
     public void setColorCells(){
         for(int i=0 ; i<imageView_List.size() ; i++){
