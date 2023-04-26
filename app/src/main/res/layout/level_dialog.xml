@@ -34,7 +34,7 @@
                 android:id="@+id/rdo_easy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/easy"
+                android:text="Easy      "
                 android:textStyle="bold"
                 android:checked="true"/>
             <RadioButton
@@ -42,12 +42,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Medium"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
             <RadioButton
                 android:id="@+id/rdo_hard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hard"
+                android:text="Hard      "
                 android:textStyle="bold" />
         </RadioGroup>
         <androidx.appcompat.widget.AppCompatButton
