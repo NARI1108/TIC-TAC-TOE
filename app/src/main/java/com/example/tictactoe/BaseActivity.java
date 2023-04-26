@@ -23,8 +23,10 @@ public class BaseActivity extends AppCompatActivity {
     int turn = PLAYER_1 , number = -1, score_1=0 ,score_2=0 ;
     int[] status = {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
     int winner = number;
-    int [][] robot_action_2_position={{0,1},{1,0},{1,2},{2,1},{3,4},{4,3},{4,5},{5,4},{6,7},{7,6},{7,8},{8,7},{0,3},{3,0},{3,6},{6,3},{1,4},{4,1},{4,7},{7,4},{2,5},{5,2},{5,8},{8,5},{0,4},{4,0},{4,8},{2,4},{4,2},{4,6},{6,4}};
-    int [][] robot_action_3_position={{0,1,2},{0,2,1},{1,2,0},{3,4,5},{3,5,4},{4,5,3},{6,7,8},{6,8,7},{7,8,6},{0,3,6},{0,6,3},{3,6,0},{1,4,7},{1,7,4},{4,7,1},{2,5,8},{2,8,5},{5,8,2},{0,4,8},{0,8,4},{4,8,0},{2,4,6},{2,6,4},{4,6,2}};
+    int [][] robot_action_2_position={{0,1},{1,0},{1,2},{2,1},{3,4},{4,3},{4,5},{5,4},{6,7},{7,6},{7,8},{8,7},{0,3},{3,0},{3,6},{6,3}
+            ,{1,4},{4,1},{4,7},{7,4},{2,5},{5,2},{5,8},{8,5},{0,4},{4,0},{4,8},{2,4},{4,2},{4,6},{6,4}};
+    int robot_action_3_position [][] = {{0,1,2},{1,2,0},{0,2,1},{3,4,5},{4,5,3},{3,5,4},{6,7,8},{7,8,6},{6,8,7},{0,3,6},{3,6,0},{0,6,3}
+            ,{1,4,7},{4,7,1},{1,7,4},{2,5,8},{5,8,2},{2,8,5},{0,4,8},{4,8,0},{0,8,4},{2,4,6},{4,6,2},{2,6,4}};
     int[][] winner_position = {{0, 1, 2}, {3, 4, 5}, {6, 7, 8}, {0, 3, 6}, {1, 4, 7}, {2, 5, 8}, {0, 4, 8}, {2, 4, 6}};
     int [] final_winner_position;
     ArrayList<ImageView> imageView_List = new ArrayList<>();
@@ -71,7 +73,28 @@ public class BaseActivity extends AppCompatActivity {
             robotAction_1();
         }
     }
-    public int checkWinner() {
+    public void robotAction_3(){
+
+        if (!game_over){
+            
+            for (int [] action_3: robot_action_3_position)
+            {
+                if (status[action_3[0]]==PLAYER_2 && status[action_3[1]]==PLAYER_2 && status[action_3[2]]==NULL){
+                    robotClick(action_3[2]);return;}
+            }
+            robotAction_2();
+        }
+    }
+    public void robotAction_4(){
+        if(!game_over){
+            for(int [] action_4 : robot_action_3_position){
+                if(status[action_4[0]] == PLAYER_1 && status[action_4[1]] == PLAYER_1 && status[action_4[2]] == NULL){
+                    robotClick(action_4[2]);return;
+                }
+            }
+            robotAction_3();
+        }
+        public int checkWinner() {
         for (int[] win_pos : winner_position) {
             if (status[win_pos[0]] == status[win_pos[1]] && status[win_pos[1]] == status[win_pos[2]] && status[win_pos[0]] != NULL) {
                 final_winner_position = win_pos;
