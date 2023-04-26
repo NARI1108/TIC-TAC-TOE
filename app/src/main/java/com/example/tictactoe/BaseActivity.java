@@ -85,7 +85,16 @@ public class BaseActivity extends AppCompatActivity {
             robotAction_2();
         }
     }
-    public int checkWinner() {
+    public void robotAction_4(){
+        if(!game_over){
+            for(int [] action_4 : robot_action_3_position){
+                if(status[action_4[0]] == PLAYER_1 && status[action_4[1]] == PLAYER_1 && status[action_4[2]] == NULL){
+                    robotClick(action_4[2]);return;
+                }
+            }
+            robotAction_3();
+        }
+        public int checkWinner() {
         for (int[] win_pos : winner_position) {
             if (status[win_pos[0]] == status[win_pos[1]] && status[win_pos[1]] == status[win_pos[2]] && status[win_pos[0]] != NULL) {
                 final_winner_position = win_pos;

@@ -102,6 +102,6 @@ public class Easy_Single_Player extends BaseActivity {
 
         click_snd.start();
         getResult();
-        robotAction_3();
+        robotAction_4();
     }
 }
