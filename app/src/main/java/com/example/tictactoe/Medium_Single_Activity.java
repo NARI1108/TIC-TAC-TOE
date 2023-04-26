@@ -1,7 +1,5 @@
 package com.example.tictactoe;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.media.MediaPlayer;
 import android.os.Bundle;
