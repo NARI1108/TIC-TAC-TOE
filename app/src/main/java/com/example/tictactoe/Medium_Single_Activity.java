@@ -1,5 +1,6 @@
 package com.example.tictactoe;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.media.MediaPlayer;
@@ -9,13 +10,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class Easy_Single_Player extends BaseActivity {
+public class Medium_Single_Activity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_double_player);
-
         txt_player1 = findViewById(R.id.txt_player1);
         txt_player2 = findViewById(R.id.txt_player2);
         txt_score1 = findViewById(R.id.txt_score1);
@@ -72,7 +72,6 @@ public class Easy_Single_Player extends BaseActivity {
             }
         });
         playerNameDialog.show();
-
     }
     @Override
     protected void onResume(){
@@ -95,13 +94,13 @@ public class Easy_Single_Player extends BaseActivity {
         ImageView imageView = (ImageView) view;
 
 
-            imageView.setImageResource(R.drawable.circle);
+        imageView.setImageResource(R.drawable.circle);
 
-            turn = PLAYER_1;
-            status[tag] = PLAYER_2;
+        turn = PLAYER_1;
+        status[tag] = PLAYER_2;
 
         click_snd.start();
         getResult();
-        robotAction_3();
+        robotAction_2();
     }
 }

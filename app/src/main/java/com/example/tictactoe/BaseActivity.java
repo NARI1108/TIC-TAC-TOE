@@ -93,7 +93,7 @@ public class BaseActivity extends AppCompatActivity {
                 }
             }
             robotAction_3();
-        }
+        }}
         public int checkWinner() {
         for (int[] win_pos : winner_position) {
             if (status[win_pos[0]] == status[win_pos[1]] && status[win_pos[1]] == status[win_pos[2]] && status[win_pos[0]] != NULL) {
