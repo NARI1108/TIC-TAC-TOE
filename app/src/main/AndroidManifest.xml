@@ -35,9 +35,6 @@
             android:name=".double_Player"
             android:exported="false" />
         <activity
-            android:name=".single_Player"
-            android:exported="false" />
-        <activity
             android:name=".Spalsh_screen"
             android:exported="true"
             android:theme="@style/fullScreen">
