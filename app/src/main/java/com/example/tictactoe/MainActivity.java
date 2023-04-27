@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
        Dialog LevelDialog = new Dialog(this);
        LevelDialog.setContentView(R.layout.level_dialog);
         LevelDialog.setCancelable(false);
-
+        RadioButton rdo_medium = LevelDialog.findViewById(R.id.rdo_medium);
         RadioButton rdo_easy = LevelDialog.findViewById(R.id.rdo_easy);
         RadioButton rdo_hard = LevelDialog.findViewById(R.id.rdo_hard);
         Button btn_play = LevelDialog.findViewById(R.id.btn_play);
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(rdo_easy.isChecked())startActivity(new Intent(MainActivity.this,Easy_Single_Player.class));
+                else if(rdo_medium.isChecked())startActivity(new Intent(MainActivity.this,Medium_Single_Player.class));
                 else if (rdo_hard.isChecked())startActivity(new Intent(MainActivity.this,Hard_Single_Player.class));
                 LevelDialog.dismiss();
             }
