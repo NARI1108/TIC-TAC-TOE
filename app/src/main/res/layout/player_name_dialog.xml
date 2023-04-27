@@ -4,8 +4,10 @@
     android:layout_height="match_parent"
     android:layout_centerInParent="true"
     android:visibility="visible"
-    android:id="@+id/player_name_layout_0">
+    android:id="@+id/player_name_layout_0"
+    android:background="@color/cardview_light_background">
     <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -28,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/txt_title"
             android:hint="@string/_player1"
+            android:textColorHint="@color/black"
             android:gravity="center"
             android:background="@drawable/style1"
             android:layout_centerHorizontal="true"
@@ -39,6 +42,7 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:hint="@string/_player2"
+            android:textColorHint="@color/black"
             android:textStyle="bold"
             android:background="@drawable/style1"
             android:layout_below="@id/edt_player1"
