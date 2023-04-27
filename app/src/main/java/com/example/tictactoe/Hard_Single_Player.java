@@ -2,6 +2,7 @@ package com.example.tictactoe;
 
 
 import android.app.Dialog;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -69,6 +70,17 @@ public class Hard_Single_Player extends BaseActivity {
             }
         });
         playerNameDialog.show();
-
+    }
+    @Override
+    protected void onResume(){
+        if(click_snd==null) click_snd = MediaPlayer.create(this,R.raw.click);
+        if(winner_snd==null) winner_snd = MediaPlayer.create(this,R.raw.win_sound);
+        super.onResume();
+    }
+    @Override
+    protected void onPause(){
+        if(click_snd!=null) click_snd.release();
+        if(winner_snd!=null) winner_snd.release();
+        super.onPause();
     }
 }
