@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class Hard_Single_Player extends BaseActivity {
 
@@ -82,5 +83,23 @@ public class Hard_Single_Player extends BaseActivity {
         if(click_snd!=null) click_snd.release();
         if(winner_snd!=null) winner_snd.release();
         super.onPause();
+    }
+    public void imagesClick(View view) {
+
+        int tag = Integer.parseInt((String) view.getTag());
+
+        if (status[tag] != NULL || game_over) return;
+
+        ImageView imageView = (ImageView) view;
+
+
+        imageView.setImageResource(R.drawable.circle);
+
+        turn = PLAYER_1;
+        status[tag] = PLAYER_2;
+
+        click_snd.start();
+        getResult();
+        robotAction_3();
     }
 }
