@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class Medium_Single_Activity extends BaseActivity {
+public class Medium_Single_Player extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,6 +99,6 @@ public class Medium_Single_Activity extends BaseActivity {
 
         click_snd.start();
         getResult();
-        robotAction_2();
+        robotAction_3();
     }
 }
