@@ -1,7 +1,13 @@
 package com.example.tictactoe;
 
+import static android.icu.text.Transliterator.REVERSE;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.Animator;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +22,7 @@ import java.util.Random;
 
 public class BaseActivity extends AppCompatActivity {
     MediaPlayer click_snd, winner_snd;
+    AnimatorSet animatorSet;
     final static int NULL = 0;
     final static int PLAYER_1 = 1;
     final static int PLAYER_2 = 2;
@@ -110,10 +117,10 @@ public class BaseActivity extends AppCompatActivity {
             String res_str = " ";
             switch (winner) {
                 case 1:
-                    res_str = player_name1 + " won.";score_1++;
+                    res_str = player_name1 + " won.";score_1++;animationCells();
                     break;
                 case 2:
-                    res_str = player_name2 + " won.";score_2++;
+                    res_str = player_name2 + " won.";score_2++;animationCells();
                     break;
                 case 3:
                     res_str = "you are equal.";
@@ -164,4 +171,25 @@ public class BaseActivity extends AppCompatActivity {
             }
         }
     }
-}
+    public void animationCells(){
+
+        ArrayList<Animator> animator_list = new ArrayList<>();
+
+        for (int pos : final_winner_position) {
+            ObjectAnimator myAnimator = ObjectAnimator.ofFloat(imageView_List .get(pos),"scaleX",0.5f);
+            myAnimator.setRepeatCount(7);
+            myAnimator.setRepeatMode(ValueAnimator.REVERSE);
+            animator_list.add(myAnimator);
+
+            myAnimator = ObjectAnimator.ofFloat(imageView_List .get(pos),"scaleY",0.5f);
+            myAnimator.setRepeatCount(7);
+            myAnimator.setRepeatMode(ValueAnimator.REVERSE);
+            animator_list.add(myAnimator);
+        }
+
+        animatorSet = new AnimatorSet();
+        animatorSet.playTogether(animator_list);
+        animatorSet.setDuration(200);
+        animatorSet.start();
+
+    }}
