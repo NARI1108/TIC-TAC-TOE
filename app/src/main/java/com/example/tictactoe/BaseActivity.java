@@ -192,4 +192,24 @@ public class BaseActivity extends AppCompatActivity {
         animatorSet.setDuration(200);
         animatorSet.start();
 
-    }}
+    }
+    public void setColorTextViews(){
+        if (turn==PLAYER_1){
+            txt_player1.setTextColor(getResources().getColor(R.color.blue));
+            txt_player1.setBackgroundResource(R.drawable.style2);
+            txt_score_1.setTextColor(getResources().getColor(R.color.black));
+
+            txt_player2.setTextColor(getResources().getColor(R.color.gray));
+            txt_player2.setBackgroundResource(R.drawable.style3);
+            txt_score_2.setTextColor(getResources().getColor(R.color.gray));
+        }else {
+            txt_player2.setTextColor(getResources().getColor(R.color.red));
+            txt_player2.setBackgroundResource(R.drawable.style2);
+            txt_score_2.setTextColor(getResources().getColor(R.color.black));
+
+            txt_player1.setTextColor(getResources().getColor(R.color.gray));
+            txt_player1.setBackgroundResource(R.drawable.style3);
+            txt_score_1.setTextColor(getResources().getColor(R.color.gray));
+        }
+    }
+}
