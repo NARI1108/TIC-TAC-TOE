@@ -98,7 +98,7 @@ public class Medium_Single_Player extends BaseActivity {
         status[tag] = PLAYER_2;
 
         click_snd.start();
-        getResult();
+        getResult(true);
         robotAction_3();
     }
 }

@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class BaseActivity extends AppCompatActivity {
-    MediaPlayer click_snd, winner_snd;
+    MediaPlayer click_snd, winner_snd, loos_snd;
     AnimatorSet animatorSet;
     final static int NULL = 0;
     final static int PLAYER_1 = 1;
@@ -58,7 +58,7 @@ public class BaseActivity extends AppCompatActivity {
         turn = PLAYER_2;
         status[tag] = PLAYER_1;
 
-        getResult();
+        getResult(true);
         click_snd.start();
     }
     public void robotAction_1() {
@@ -109,7 +109,7 @@ public class BaseActivity extends AppCompatActivity {
         }
         return NO_WINNER;
     }
-    public void getResult() {
+    public void getResult(boolean robot) {
         winner = checkWinner();
         if(winner != NO_WINNER || isFullAllCells()){
             game_over = true;
@@ -118,9 +118,10 @@ public class BaseActivity extends AppCompatActivity {
             switch (winner) {
                 case 1:
                     res_str = player_name1 + " won.";score_1++;animationCells();
+                    if(robot) loos_snd.start(); else winner_snd.start();
                     break;
                 case 2:
-                    res_str = player_name2 + " won.";score_2++;animationCells();
+                    res_str = player_name2 + " won.";score_2++;animationCells(); winner_snd.start();
                     break;
                 case 3:
                     res_str = "you are equal.";
@@ -134,8 +135,6 @@ public class BaseActivity extends AppCompatActivity {
             result_layout.setVisibility(View.VISIBLE);
 
             setColorCells();
-
-            winner_snd.start();
         }}
     public boolean isFullAllCells() {
         for (int j : status) {

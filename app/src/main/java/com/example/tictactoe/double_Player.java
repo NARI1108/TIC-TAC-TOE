@@ -93,7 +93,7 @@ public class double_Player extends BaseActivity {
                 turn = PLAYER_1;
                 status[tag] = PLAYER_2;
             }
-            getResult();
+            getResult(false);
             click_snd.start();
     }
     @Override
