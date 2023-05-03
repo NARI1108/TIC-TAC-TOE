@@ -11,7 +11,7 @@
 
 ## <code><strong>About App</strong></code> ##
 
-<p><li>This Game<strong>(Tic Tac Toe)</strong>, which is one of the most popular simple and puzzle games, usually has its own audience in all age groups.<br>
+<p><li><p>This Game<strong>(Tic Tac Toe)</strong>, which is one of the most popular simple and puzzle games, usually has its own audience in all age groups.<br>
 Our game has two parts. The first part is playing with the robot.<strong>(You can play with it on three level easy and medium and hard.)</strong><br>
 The second part of the game for two players.<strong>(You can play this game with a friend.)</strong><br></p>
 
@@ -19,7 +19,7 @@ The second part of the game for two players.<strong>(You can play this game with
 <p>You can play this game online on this site.</p>
  <img align="left" alt="GIF" height="30px" src="https://bartvwezel.nl/wp-content/uploads/2020/09/ezgif.com-video-to-gif-8.gif"/>
  
-<p>[Tic Tac Toe](https://tic-tac-toe.com/)
+[Tic Tac Toe](https://tic-tac-toe.com/)
 
 ## <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
   <ul>
