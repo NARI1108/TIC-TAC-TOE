@@ -56,6 +56,7 @@ public class BaseActivity extends AppCompatActivity {
         imageView_List.get(tag).setImageResource(R.drawable.multiply);
 
         turn = PLAYER_2;
+        setColorTextViews();
         status[tag] = PLAYER_1;
 
         getResult(true);
@@ -144,6 +145,7 @@ public class BaseActivity extends AppCompatActivity {
     }
     public void resetGame(boolean robot){
         if(winner == NO_WINNER) turn = PLAYER_1; else turn = winner;
+        if (!robot)setColorTextViews();
         game_over=false;
         winner=number;
         Arrays.fill(status,NULL);
@@ -194,21 +196,21 @@ public class BaseActivity extends AppCompatActivity {
     }
     public void setColorTextViews(){
         if (turn==PLAYER_1){
-            txt_player1.setTextColor(getResources().getColor(R.color.blue));
+            txt_player1.setTextColor(getResources().getColor(R.color.Bule));
             txt_player1.setBackgroundResource(R.drawable.style2);
-            txt_score_1.setTextColor(getResources().getColor(R.color.black));
+            txt_score1.setTextColor(getResources().getColor(R.color.black));
 
             txt_player2.setTextColor(getResources().getColor(R.color.gray));
             txt_player2.setBackgroundResource(R.drawable.style3);
-            txt_score_2.setTextColor(getResources().getColor(R.color.gray));
+            txt_score2.setTextColor(getResources().getColor(R.color.gray));
         }else {
-            txt_player2.setTextColor(getResources().getColor(R.color.red));
+            txt_player2.setTextColor(getResources().getColor(R.color.Red));
             txt_player2.setBackgroundResource(R.drawable.style2);
-            txt_score_2.setTextColor(getResources().getColor(R.color.black));
+            txt_score2.setTextColor(getResources().getColor(R.color.black));
 
             txt_player1.setTextColor(getResources().getColor(R.color.gray));
             txt_player1.setBackgroundResource(R.drawable.style3);
-            txt_score_1.setTextColor(getResources().getColor(R.color.gray));
+            txt_score1.setTextColor(getResources().getColor(R.color.gray));
         }
     }
 }

@@ -106,10 +106,11 @@ public class Easy_Single_Player extends BaseActivity {
             imageView.setImageResource(R.drawable.circle);
 
             turn = PLAYER_1;
+            setColorTextViews();
             status[tag] = PLAYER_2;
 
         click_snd.start();
         getResult(true);
-        robotAction_3();
+        robotAction_2();
     }
 }

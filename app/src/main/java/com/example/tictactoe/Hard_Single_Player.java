@@ -82,12 +82,14 @@ public class Hard_Single_Player extends BaseActivity {
     protected void onResume(){
         if(click_snd==null) click_snd = MediaPlayer.create(this,R.raw.click);
         if(winner_snd==null) winner_snd = MediaPlayer.create(this,R.raw.win_sound);
+        if(loos_snd==null) loos_snd = MediaPlayer.create(this,R.raw.fail_sound);
         super.onResume();
     }
     @Override
     protected void onPause(){
         if(click_snd!=null) click_snd.release();
         if(winner_snd!=null) winner_snd.release();
+        if(loos_snd!=null) loos_snd.release();
         super.onPause();
     }
     public void imagesClick(View view) {
@@ -102,6 +104,7 @@ public class Hard_Single_Player extends BaseActivity {
         imageView.setImageResource(R.drawable.circle);
 
         turn = PLAYER_1;
+        setColorTextViews();
         status[tag] = PLAYER_2;
 
         click_snd.start();
