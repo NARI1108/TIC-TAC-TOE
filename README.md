@@ -6,7 +6,7 @@
 
 </h3>
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tmaNTwDR2EHWDXM-dPEgscQvu8LKQ_K_8TjhImP-WJ05d6aZDhalNZpcnaMpDNjlEQ&usqp=CAU" width="280">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tmaNTwDR2EHWDXM-dPEgscQvu8LKQ_K_8TjhImP-WJ05d6aZDhalNZpcnaMpDNjlEQ&usqp=CAU" width="380">
 
 <p><strong>You can see a profile of our game below.</strong></p>
 
