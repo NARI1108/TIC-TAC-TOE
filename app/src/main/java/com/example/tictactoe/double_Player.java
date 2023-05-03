@@ -77,7 +77,7 @@ public class double_Player extends BaseActivity {
 
                 txt_player1.setText(player_name1);
                 txt_player2.setText(player_name2);
-
+                setColorTextViews();
                 playerNameDialog.dismiss();
             }
         });
@@ -100,6 +100,7 @@ public class double_Player extends BaseActivity {
                 turn = PLAYER_1;
                 status[tag] = PLAYER_2;
             }
+            setColorTextViews();
             getResult(false);
             click_snd.start();
     }
