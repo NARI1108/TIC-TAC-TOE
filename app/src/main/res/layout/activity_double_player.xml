@@ -210,7 +210,6 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/txt_result"
             android:id="@+id/btn_play_again"
-            android:onClick="resetGame"
             />
     </RelativeLayout>
 </RelativeLayout>
