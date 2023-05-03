@@ -39,12 +39,6 @@ You can play this game online on this site.</p>
 
 
 
-<ul>
-  <li>
-    This version can be run on Android devices.
-    </li>
-  </ul>
-  <p>Run the app and enjoy it</p>
  
 ## <img align="left" alt="GIF" height="50px" src="https://cdn.dribbble.com/users/2131993/screenshots/4948736/thoughtworks-gif_dribbble.gif"/>    Developer:
 
