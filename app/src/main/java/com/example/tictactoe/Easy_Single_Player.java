@@ -41,6 +41,12 @@ public class Easy_Single_Player extends BaseActivity {
         result_layout = findViewById(R.id.result_layout);
 
         playerNamesDialog();
+        btn_play_again.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resetGame(false);
+            }
+        });
     }
     private void playerNamesDialog() {
         Dialog playerNameDialog = new Dialog(this);

@@ -142,7 +142,7 @@ public class BaseActivity extends AppCompatActivity {
         }
         return true;
     }
-    public void resetGame(View view){
+    public void resetGame(boolean robot){
         if(winner == NO_WINNER) turn = PLAYER_1; else turn = winner;
         game_over=false;
         winner=number;
@@ -151,7 +151,7 @@ public class BaseActivity extends AppCompatActivity {
             imageView_List.get(i).setImageResource(0);
 
         result_layout.setVisibility(View.GONE);
-        if(turn==PLAYER_1)robotClick(getRandomNumber(status.length));
+        if(turn==PLAYER_1 && robot)robotClick(getRandomNumber(status.length));
     }
     public void setColorCells(){
         for(int i=0 ; i<imageView_List.size() ; i++){

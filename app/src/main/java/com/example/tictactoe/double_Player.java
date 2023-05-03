@@ -47,7 +47,14 @@ public class double_Player extends BaseActivity {
 
 
         playerNamesDialog();
-    }
+        btn_play_again.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                resetGame(false);
+            }
+        });
+
+}
     private void playerNamesDialog() {
         Dialog playerNameDialog = new Dialog(this);
         playerNameDialog.setContentView(R.layout.player_name_dialog);
