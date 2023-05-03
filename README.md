@@ -19,7 +19,7 @@ The second part of the game for two players.<strong>(You can play this game with
 <p>You can play this game online on this site.</p>
  <img align="left" alt="GIF" height="30px" src="https://bartvwezel.nl/wp-content/uploads/2020/09/ezgif.com-video-to-gif-8.gif"/>
  
-<p>[Tic Tac Toe](https://tic-tac-toe.com/)</p>
+<p>[Tic Tac Toe](https://tic-tac-toe.com/)
 
 ## <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
   <ul>
