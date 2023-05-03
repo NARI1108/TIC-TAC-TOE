@@ -1,4 +1,10 @@
 
+ <h3 align="center">
+  
+  Welcome to my Readme!
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
+
+</h3>
  ![images (2)](https://user-images.githubusercontent.com/125409221/235647339-7a315950-604e-4e2c-a4a1-efa2a96ed03e.jpg)
 
 <p>This Game<strong>(Tic Tac Toe)</strong>, which is one of the most popular simple and puzzle games, usually has its own audience in all age groups.<br>
