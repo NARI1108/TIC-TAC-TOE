@@ -6,7 +6,8 @@
 
 </h3>
 
- ![images (2)](https://user-images.githubusercontent.com/125409221/235647339-7a315950-604e-4e2c-a4a1-efa2a96ed03e.jpg)
+<img src="[https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tmaNTwDR2EHWDXM-dPEgscQvu8LKQ_K_8TjhImP-WJ05d6aZDhalNZpcnaMpDNjlEQ&usqp=CAU)" width="28">
+
 <p><strong>You can see a profile of our game below.</strong></p>
 
 ## <code><strong>About App</strong></code> ##
