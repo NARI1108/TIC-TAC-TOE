@@ -16,7 +16,7 @@ Our game has two parts. The first part is playing with the robot.<strong>(You ca
 The second part of the game for two players.<strong>(You can play this game with a friend.)</strong><br></li></p>
 
 
-<p><img src="https://sitek.ir/wp-content/uploads/2019/10/screencapture-identity-flickr-sign-up-2019-09-23-14_17_41.png" width="28">You can play this game online on this site.</p>
+<p><img src="https://sitek.ir/wp-content/uploads/2019/10/screencapture-identity-flickr-sign-up-2019-09-23-14_17_41.png" width="28">    You can play this game online on this site.</p>
  <img align="left" alt="GIF" height="30px" src="https://bartvwezel.nl/wp-content/uploads/2020/09/ezgif.com-video-to-gif-8.gif"/>
  
 [Tic Tac Toe](https://tic-tac-toe.com/)
