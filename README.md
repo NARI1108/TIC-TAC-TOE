@@ -7,7 +7,7 @@
 </h3>
 <img src="https://user-images.githubusercontent.com/125409221/236158217-733c00d8-47f3-449b-a5ab-2e846c664693.mp4">
 
-
+<img src="https://user-images.githubusercontent.com/125409221/236160691-fe52a9f3-2f3f-4123-8e1c-a98e0432d097.mp4">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tmaNTwDR2EHWDXM-dPEgscQvu8LKQ_K_8TjhImP-WJ05d6aZDhalNZpcnaMpDNjlEQ&usqp=CAU" width="380">
 
 <p><strong>You can see a profile of our game below.</strong></p>
