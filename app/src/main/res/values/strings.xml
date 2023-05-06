@@ -14,8 +14,11 @@
         other The game will be in favor of the winning player.
     </string>
     <string name="contact_us.txt">
-        Creating the content of the game guide, such as enlarging the image and
-        writing the guide text, writing the game version and putting the game icon.
+        The support team of Lollipop company is by your side in this section
+        Respond to your problems, comments and criticisms.
+        Please, in order to speed up and facilitate the response, your question in the form of a
+        Send a message. Your message will be checked and answered as soon as possible will be given.
+        Thank you for your patience.
     </string>
     <string name="play_again">Play again</string>
     <string name="player2">Player2</string>
