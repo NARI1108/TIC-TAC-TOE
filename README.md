@@ -9,7 +9,6 @@
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tmaNTwDR2EHWDXM-dPEgscQvu8LKQ_K_8TjhImP-WJ05d6aZDhalNZpcnaMpDNjlEQ&usqp=CAU" width="380">
 
 
-
 ## ✨TicTacToe Vidoe
 [TicTacToe.zip](https://github.com/NARI1108/TIC-TAC-TOE/files/11415353/TicTacToe.zip)
 <p><strong>You can see a profile of our game below.</strong></p>
