@@ -36,7 +36,7 @@ The second part of the game for two players.<strong>(You can play this game with
    <code><em><strong>Naser Ahmadi</strong></em></code>
           
          
-          
+         
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Dancing+Script&size=30&color=F38F02&center=true&vCenter=true&width=300&height=50&lines=Thanks+for+your+visit!;Have+a+nice+day!;" alt="Footer"></img>
   </div>
