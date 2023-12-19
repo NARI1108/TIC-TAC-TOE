@@ -5,7 +5,7 @@
 </h3>
 
 [<img alt="github" src="https://img.shields.io/badge/github-NARI1108/TIC TAC TOE-8da0cb?logo=github" height="20">](https://github.com/NARI1108/TIC-TAC-TOE)
-[![GUN](https://img.shields.io/badge/license-Apache-blue.svg)](https://github.com/NARI1108/TIC-TAC-TOE/blob/TicTacToeAtFristDay/LICENSE)
+[![GUN](https://img.shields.io/badge/license-GUN-blue.svg)](https://github.com/NARI1108/TIC-TAC-TOE/blob/TicTacToeAtFristDay/LICENSE)
 
 
 <img src="https://user-images.githubusercontent.com/125409221/236158217-733c00d8-47f3-449b-a5ab-2e846c664693.mp4">
