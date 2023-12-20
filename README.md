@@ -7,7 +7,8 @@
 [<img alt="github" src="https://img.shields.io/badge/github-NARI1108/TIC TAC TOE-8da0cb?logo=github" height="20">](https://github.com/NARI1108/TIC-TAC-TOE)
 [![GUN](https://img.shields.io/badge/license-GUN-blue.svg)](https://github.com/NARI1108/TIC-TAC-TOE/blob/TicTacToeAtFristDay/LICENSE)
 [![Password](https://img.shields.io/badge/Vidoe-Password-red.svg)](https://github.com/NARI1108/TIC-TAC-TOE/files/11415353/TicTacToe.zip)
-[![Game online](https://img.shields.io/badge/Online-TicTacToe-red.svg)](https://github.com/NARI1108/TIC-TAC-TOE/files/11415353/TicTacToe.zip)
+[![Game online](https://img.shields.io/badge/Online-TicTacToe-yellow.svg)](https://github.com/NARI1108/TIC-TAC-TOE/files/11415353/TicTacToe.zip)
+
 <img src="https://user-images.githubusercontent.com/125409221/236158217-733c00d8-47f3-449b-a5ab-2e846c664693.mp4">
 
 <img src="https://user-images.githubusercontent.com/125409221/236160691-fe52a9f3-2f3f-4123-8e1c-a98e0432d097.mp4">
