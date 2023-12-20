@@ -7,7 +7,7 @@
 [<img alt="github" src="https://img.shields.io/badge/github-NARI1108/TIC TAC TOE-8da0cb?logo=github" height="20">](https://github.com/NARI1108/TIC-TAC-TOE)
 [![GUN](https://img.shields.io/badge/license-GUN-blue.svg)](https://github.com/NARI1108/TIC-TAC-TOE/blob/TicTacToeAtFristDay/LICENSE)
 [![Password](https://img.shields.io/badge/Vidoe-Password-red.svg)](https://github.com/NARI1108/TIC-TAC-TOE/files/11415353/TicTacToe.zip)
-[![Game online](https://img.shields.io/badge/Online-TicTacToe-yellow.svg)](https://github.com/NARI1108/TIC-TAC-TOE/files/11415353/TicTacToe.zip)
+[![Game online](https://img.shields.io/badge/Online-TicTacToe-yellow.svg)](https://tic-tac-toe.com/)
 
 <img src="https://user-images.githubusercontent.com/125409221/236158217-733c00d8-47f3-449b-a5ab-2e846c664693.mp4">
 
@@ -22,12 +22,7 @@
 <p><li>This Game<strong>(Tic Tac Toe)</strong>, which is one of the most popular simple and puzzle games, usually has its own audience in all age groups.<br>
 Our game has two parts. The first part is playing with the robot.<strong>(You can play with it on three level easy and medium and hard.)</strong><br>
 The second part of the game for two players.<strong>(You can play this game with a friend.)</strong><br></li></p>
-
-
-<p><img src="https://sitek.ir/wp-content/uploads/2019/10/screencapture-identity-flickr-sign-up-2019-09-23-14_17_41.png" width="28">    You can play this game online on this site.</p>
- <img align="left" alt="GIF" height="30px" src="https://bartvwezel.nl/wp-content/uploads/2020/09/ezgif.com-video-to-gif-8.gif"/>
  
-[Tic Tac Toe](https://tic-tac-toe.com/)
 
 ## <img align="left" alt="GIF" height="50px" src="https://www.toptimenet.com/images/setting.gif"/>  
   <ul>
