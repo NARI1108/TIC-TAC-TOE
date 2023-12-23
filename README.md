@@ -9,6 +9,8 @@
 [![Tic Tac Toe](https://img.shields.io/badge/Vidoe-TicTacToe-red.svg)](https://github.com/NARI1108/TIC-TAC-TOE/files/11415353/TicTacToe.zip)
 [![Game online](https://img.shields.io/badge/Online-TicTacToe-yellow.svg)](https://tic-tac-toe.com/)
 ![GitHub language count](https://img.shields.io/github/languages/count/NARI1108/TIC-TAC-TOE?color=pink)
+![GitHub watchers](https://img.shields.io/github/watchers/NARI1108/TIC-TAC-TOE?labelColor=gray&color=orange)
+
 
 <img src="https://user-images.githubusercontent.com/125409221/236158217-733c00d8-47f3-449b-a5ab-2e846c664693.mp4">
 
