@@ -6,6 +6,7 @@
 
 [<img alt="github" src="https://img.shields.io/badge/github-NARI1108/TIC TAC TOE-8da0cb?logo=github" height="20">](https://github.com/NARI1108/TIC-TAC-TOE)
 [![GUN](https://img.shields.io/badge/license-GUN-blue.svg)](https://github.com/NARI1108/TIC-TAC-TOE/blob/TicTacToeAtFristDay/LICENSE)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/y/NARI1108/TIC-TAC-TOE?style=social&logoColor=eb34a8&color=eb34a8)
 [![Tic Tac Toe](https://img.shields.io/badge/Vidoe-TicTacToe-red.svg)](https://github.com/NARI1108/TIC-TAC-TOE/files/11415353/TicTacToe.zip)
 [![Game online](https://img.shields.io/badge/Online-TicTacToe-yellow.svg)](https://tic-tac-toe.com/)
 ![GitHub language count](https://img.shields.io/github/languages/count/NARI1108/TIC-TAC-TOE?color=pink)
